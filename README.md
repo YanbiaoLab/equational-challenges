@@ -20,21 +20,21 @@ Offline solutions archived as of **2026-09-07**:
 | Collection | Problems | true | false | Solved / with proof | Remaining |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | [Wrong Book 3000](datasets/wrong-book-3000/README.md) | 2,983 | 1,484 | 1,290 | **2,774** | 209 |
-| [Wrong Book 3500](datasets/wrong-book-3500/README.md) | 3,500 | 1,406 | 1,008 | **2,414** | 1,086 |
+| [Wrong Book 3500](datasets/wrong-book-3500/README.md) | 3,500 | 1,674 | 1,303 | **2,977** | 523 |
 <!-- results:end -->
 
 The collections share an identical 2,500-row prefix. Their extensions are
-disjoint: **3,983 unique directed problems**, with **2,774 distinct solutions**.
-Do not add the two solved counts. The 3500 extension has 1,000 problems without
-solutions in this package; “remaining” does not claim mathematical open status.
+disjoint: **3,983 unique directed problems**, with **3,337 distinct solutions**.
+Do not add the two solved counts. The 1,000-problem 3500 extension now has 563 solutions and 437 remaining; “remaining” does not claim mathematical open status.
 
-Every solved problem has one public Lean file. The maintainers report
-Judge-v3-repl acceptance for all 2,774 selected submission sources, based on
-local validation records. Those records and the proof-generation tools are not
-included in the public repository. The expanded standalone files differ from the
-submitted sources; the historical acceptance count is not a claim that every
-expanded file was freshly compiled. Readers can check the published files using
-the [Lean verification instructions](docs/verification.md).
+Every solved problem has one public Lean file. All 3,337 selected submission
+sources have recorded Judge-v3-repl acceptance. The 563 new solutions from
+`wrongbook3500_hits_20260816` include 22 compatibility repairs accepted after
+reverification; their final standalone files were also compiled individually
+with Lean 4.33.1 and checked for allowed axiom dependencies. The existing 2,774
+files were preserved; this update does not claim a fresh compilation of all of
+them. Detailed source, compiler and Judge records remain local. See the
+[Lean verification instructions](docs/verification.md).
 
 ## How Wrong Book 3000 and 3500 were built
 

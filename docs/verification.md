@@ -9,15 +9,23 @@ certificate per solved directed problem, construction notes and a pinned Lean
 environment. Each certificate embeds its magma definitions, premise, conclusion,
 goal and required project helpers. Reading a proof needs no other project.
 
-As of 2026-09-07, the maintainers report 2,774 selected submission sources
-accepted by Judge-v3-repl: 1,484 true and 1,290 false. Of these, 2,414 also belong
-to Wrong Book 3500. Detailed requests, responses, original submissions and
-maintenance tools remain local and are not included in the public repository.
+As of 2026-09-07, all 3,337 selected submission sources have recorded
+Judge-v3-repl acceptance: 1,752 true and 1,585 false. Of these, 2,977 belong to
+Wrong Book 3500. Detailed validation records remain local.
 
-The expanded public files have different hashes from their submission sources.
-The historical acceptance count therefore describes the selected sources in the
-Judge's problem context; it is not a report of fresh compilation of all expanded
-files. Readers can independently compile the public files using the steps below.
+The 563 new files from `wrongbook3500_hits_20260816` were independently compiled
+as complete standalone files using Lean 4.33.1 and the pinned Mathlib revision.
+Each compilation checked the final `certificate_<id>` theorem and its axiom
+dependencies. Compilation was serial, with at most a 2 GiB Lean memory budget
+and a 3 GiB process-RSS stop threshold. Unnecessary umbrella imports were
+removed or replaced with specific standard-library/Mathlib imports; accepted
+source proof bodies and directed mathematical targets were preserved.
+
+All 563 final file hashes are bound to successful compiler records and their
+selected Judge-accepted sources, including the 22 compatibility repairs.
+The earlier 2,774 public files were unchanged and were not all freshly compiled
+in this update. Source acceptance and standalone compilation have separate
+records because their file hashes differ.
 
 ## Lean environment
 
