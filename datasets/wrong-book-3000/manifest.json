@@ -14,6 +14,7 @@
   "schema_version": 3,
   "sha256": "fb1606578ceafcd1019d96733db4c418596f9884952237e72af2579c382ef1f7",
   "size_bytes": 452824,
+  "standalone_compiled_certificates": 1,
   "verification_scope": "Maintainer-reported historical acceptance of selected submission sources; validation records are retained locally. Expanded public files are independently checkable with Lean.",
   "warning": "Unknown means no solution is included in this package, not mathematical open status."
 }

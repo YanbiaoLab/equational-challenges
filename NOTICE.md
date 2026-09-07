@@ -48,3 +48,14 @@ submission hash; embedded helper sections identify their original modules.
 Detailed import and validation records are retained by the maintainers locally
 and are not part of the public package. Source hashes are identifiers, not a
 replacement for attribution or permission.
+
+## Wrong Book 3500 addition (2026-09-07)
+
+The 563 additional directed-pair solutions were selected from the
+`wrongbook3500_hits_20260816` export supplied by Jiaming. Its historical runs
+identify v48, d17_fixed, cyclic_skew_search and presburger_affine_search among
+the solvers producing these additions. Original submissions and historical
+Judge metadata are retained locally. Twenty-two submissions received
+compatibility repairs and fresh Judge acceptance. Public files embed project
+helpers and use narrowed imports where independently validated by Lean.
+The license and attribution scope above continues to apply.
