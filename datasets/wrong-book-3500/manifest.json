@@ -1,0 +1,27 @@
+{
+  "current_status_path": "../../results/verdicts.jsonl",
+  "file": "wrong-book-3500.jsonl",
+  "frozen_membership": true,
+  "historical_expected_verdict_counts": {
+    "false": 30,
+    "true": 208,
+    "unknown_residual": 3262
+  },
+  "known_with_submission_source": 2414,
+  "known_without_submission_source": 0,
+  "name": "wrong-book-3500",
+  "original_path": "../../provenance/raw/wrong-book-3500.jsonl",
+  "original_sha256": "25fe4492091c6f76de1a46a1ce7a32e2f931ffe3fdbecc6af2adcb3127e0c468",
+  "original_size_bytes": 6782230,
+  "provenance_path": "../../provenance/import.json",
+  "recorded_verdict_counts": {
+    "false": 1008,
+    "true": 1406,
+    "unknown": 1086
+  },
+  "rows": 3500,
+  "schema_version": 2,
+  "sha256": "fca0ccfdb31fd2eae5f6669586309130ccb9e591f19a5142aa6604e81f7023f8",
+  "size_bytes": 535464,
+  "warning": "Problem rows contain no labels. Use the separate recorded-verdict ledger; archived labels are historical."
+}
