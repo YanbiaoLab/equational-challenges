@@ -15,26 +15,34 @@ Each problem asks whether one identity implies another in every **magma**
 ## Current results
 
 <!-- results:start -->
-Offline solutions archived as of **2026-09-07**:
+Offline solutions archived as of **2026-09-08**:
 
 | Collection | Problems | true | false | Solved / with proof | Remaining |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| [Wrong Book 3000](datasets/wrong-book-3000/README.md) | 2,983 | 1,484 | 1,290 | **2,774** | 209 |
-| [Wrong Book 3500](datasets/wrong-book-3500/README.md) | 3,500 | 1,674 | 1,303 | **2,977** | 523 |
+| [Wrong Book 3000](datasets/wrong-book-3000/README.md) | 2,983 | 1,484 | 1,292 | **2,776** | 207 |
+| [Wrong Book 3500](datasets/wrong-book-3500/README.md) | 3,500 | 1,676 | 1,375 | **3,051** | 449 |
 <!-- results:end -->
 
 The collections share an identical 2,500-row prefix. Their extensions are
-disjoint: **3,983 unique directed problems**, with **3,337 distinct solutions**.
-Do not add the two solved counts. The 1,000-problem 3500 extension now has 563 solutions and 437 remaining; “remaining” does not claim mathematical open status.
+disjoint: **3,983 unique directed problems**, with **3,412 distinct solutions**.
+Do not add the two solved counts. The 1,000-problem 3500 extension now has 636 solutions and 364 remaining; “remaining” does not claim mathematical open status.
 
-Every solved problem has one public Lean file. All 3,337 selected submission
-sources have recorded Judge-v3-repl acceptance. The 563 new solutions from
-`wrongbook3500_hits_20260816` include 22 compatibility repairs accepted after
-reverification; their final standalone files were also compiled individually
-with Lean 4.33.1 and checked for allowed axiom dependencies. The existing 2,774
-files were preserved; this update does not claim a fresh compilation of all of
-them. Detailed source, compiler and Judge records remain local. See the
-[Lean verification instructions](docs/verification.md).
+Every solved problem has one public Lean file. All **3,412 selected submission
+sources** have recorded Judge-v3-repl acceptance. The 2026-09-08 update adds
+**75 solutions from `solo_v9.py`**: 2 implication proofs and 73 countermodels,
+found among the 646 deduplicated remaining problems. Each problem received a
+3,600-second budget in a fixed pool of 100 reused Alibaba Cloud Sandboxes, with
+Aurora Judge-v3-repl verification; 571 problems remained unsolved at timeout.
+All 75 new standalone certificates were compiled individually with Lean 4.33.1
+and the pinned Mathlib revision, including an axiom check of the final theorem.
+All 75 also passed a fresh, cache-disabled Aurora Judge-v3-repl replay on
+2026-09-08, using up to 35 concurrent jobs. Each unchanged public file hash
+is bound to its exact extracted submission source and a new accepted job ID.
+The earlier 563 additions from `wrongbook3500_hits_20260816` already have
+standalone compilation records, including 22 repaired and reverified submissions.
+The existing 3,337 files were preserved; this update does not claim a fresh
+compilation of all older files. Detailed source, compiler and Judge records
+remain local. See the [Lean verification instructions](docs/verification.md).
 
 ## How Wrong Book 3000 and 3500 were built
 

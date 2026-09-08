@@ -59,3 +59,16 @@ Judge metadata are retained locally. Twenty-two submissions received
 compatibility repairs and fresh Judge acceptance. Public files embed project
 helpers and use narrowed imports where independently validated by Lean.
 The license and attribution scope above continues to apply.
+
+## solo_v9 addition (2026-09-08)
+
+The 75 additional directed-pair solutions were produced by the supplied
+`data/solo_v9.py` snapshot (SHA-256
+`cdec40c1a31db314d94dd079a51064fa284627f7641749132e1787e85fd3971e`).
+The run used a fixed pool of 100 reused Alibaba Cloud Sandboxes and Aurora
+Judge-v3-repl, with 3,600 seconds per remaining problem. The additions comprise
+2 implication proofs and 73 countermodels. Original submissions, request and
+response evidence, solver identity and compilation records are retained locally.
+Public files embed the existing project helpers and preserve accepted proof
+bodies; import changes are recorded separately. The license and attribution
+scope above continues to apply.
