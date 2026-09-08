@@ -1,20 +1,20 @@
 {
-  "accepted_submission_sources": 2977,
-  "as_of": "2026-09-07",
+  "accepted_submission_sources": 3051,
+  "as_of": "2026-09-08",
   "file": "wrong-book-3500.jsonl",
   "frozen_membership": true,
   "name": "wrong-book-3500",
   "proof_path_template": "../../proofs/<eq1_id>_to_<eq2_id>.lean",
   "recorded_verdict_counts": {
-    "false": 1303,
-    "true": 1674,
-    "unknown": 523
+    "false": 1375,
+    "true": 1676,
+    "unknown": 449
   },
   "rows": 3500,
   "schema_version": 3,
   "sha256": "fca0ccfdb31fd2eae5f6669586309130ccb9e591f19a5142aa6604e81f7023f8",
   "size_bytes": 535464,
-  "standalone_compiled_certificates": 564,
+  "standalone_compiled_certificates": 638,
   "verification_scope": "Maintainer-reported historical acceptance of selected submission sources; validation records are retained locally. Expanded public files are independently checkable with Lean.",
   "warning": "Unknown means no solution is included in this package, not mathematical open status."
 }
